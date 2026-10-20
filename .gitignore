@@ -1,4 +1,58 @@
-vendor/
+# Jekyll
 _site/
+.jekyll-cache/
 .jekyll-metadata
+.sass-cache/
+
+# Bundler
+.bundle/
+vendor/
+vendor/bundle/
+vendor/cache/
+vendor/gems/
+vendor/ruby/
+
+# Ruby
+*.gem
+.ruby-version
+.ruby-gemset
+
+# Dependências
+Gemfile.lock
+
+# Logs
+*.log
+
+# Arquivos temporários
+*.tmp
+*.swp
+*.swo
+*~
+
+# Sistema Operacional
+.DS_Store
+Thumbs.db
+
+# IDEs e Editores
+.vscode/
+.idea/
+*.iml
+
+# Testes e cobertura
+coverage/
+.coverage
+
+# Cache
+.cache/
+
+# Ambiente
+.env
+.env.*
+
+# JSON gerados automaticamente (opcional)
 *.json
+
+# Exceções (caso precise versionar alguns JSON)
+!package.json
+!package-lock.json
+!composer.json
