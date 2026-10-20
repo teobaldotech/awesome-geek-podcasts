@@ -1,3 +1,4 @@
+
 # Jekyll
 _site/
 .jekyll-cache/
@@ -6,7 +7,6 @@ _site/
 
 # Bundler
 .bundle/
-vendor/
 vendor/bundle/
 vendor/cache/
 vendor/gems/
@@ -17,8 +17,8 @@ vendor/ruby/
 .ruby-version
 .ruby-gemset
 
-# Dependências
-Gemfile.lock
+# Dependências JavaScript
+node_modules/
 
 # Logs
 *.log
@@ -29,11 +29,11 @@ Gemfile.lock
 *.swo
 *~
 
-# Sistema Operacional
+# Sistema operacional
 .DS_Store
 Thumbs.db
 
-# IDEs e Editores
+# IDEs e editores
 .vscode/
 .idea/
 *.iml
@@ -41,18 +41,28 @@ Thumbs.db
 # Testes e cobertura
 coverage/
 .coverage
+.pytest_cache/
+__pycache__/
+*.py[cod]
 
 # Cache
 .cache/
 
-# Ambiente
+# Ambiente e segredos
 .env
 .env.*
+!.env.example
 
-# JSON gerados automaticamente (opcional)
-*.json
+# Arquivos de build
+dist/
+build/
 
-# Exceções (caso precise versionar alguns JSON)
+# Arquivos JSON gerados automaticamente
+# Prefira ignorar arquivos específicos, se necessário.
+# Exemplo:
+# /dados/gerados.json
+
+# Arquivos que devem ser versionados
 !package.json
 !package-lock.json
 !composer.json
