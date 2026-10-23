@@ -1,4 +1,3 @@
-
 # ==================================================
 # JEKYLL
 # ==================================================
@@ -8,115 +7,48 @@ _site/
 .sass-cache/
 
 # ==================================================
-# RUBY / BUNDLER
+# DEPENDÊNCIAS
 # ==================================================
-.bundle/
-vendor/bundle/
-vendor/cache/
-vendor/gems/
-vendor/ruby/
-*.gem
-.ruby-version
-.ruby-gemset
 
-# Manter Gemfile e Gemfile.lock versionados
-
-# ==================================================
-# JAVASCRIPT / NODE.JS
-# ==================================================
+# Node.js
 node_modules/
-.npm/
-.eslintcache
-.stylelintcache
+
+# PHP / Composer
+/vendor/
+
+# Ruby
+.bundle/
+
+# Python
+.venv/
+venv/
+env/
+ENV/
+
+# ==================================================
+# BUILD / CACHE
+# ==================================================
+dist/
+build/
+coverage/
+.cache/
 .parcel-cache/
-.turbo/
 .next/
 .nuxt/
 .svelte-kit/
-
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-
-# Manter package.json e arquivos de lock versionados
+.turbo/
 
 # ==================================================
-# PHP / COMPOSER
+# TESTES
 # ==================================================
-/vendor/
-composer.phar
-
-# Manter composer.json e composer.lock versionados
-
-# ==================================================
-# PYTHON
-# ==================================================
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-
-.venv/
-venv/
-ENV/
-env/
-
 .pytest_cache/
-.coverage
-.coverage.*
-htmlcov/
 .tox/
 .nox/
 .mypy_cache/
-.pyre/
 .ruff_cache/
-.dmypy.json
-.hypothesis/
-
-# Distribuições Python
-dist/
-build/
-*.egg-info/
-.eggs/
-
-# ==================================================
-# TESTES / COBERTURA
-# ==================================================
-coverage/
-test-results/
-playwright-report/
-blob-report/
 .nyc_output/
-
-# ==================================================
-# BUILD / FRAMEWORKS
-# ==================================================
-out/
-.tmp/
-temp/
-.cache/
-.parcel-cache/
-storybook-static/
-
-# ==================================================
-# AMBIENTE / SEGREDOS
-# ==================================================
-.env
-.env.*
-!.env.example
-!.env.*.example
-
-# Chaves e certificados privados
-*.pem
-*.key
-*.p12
-*.pfx
-*.keystore
-
-# Credenciais locais
-secrets/
-.local-secrets/
+playwright-report/
+test-results/
 
 # ==================================================
 # LOGS
@@ -125,68 +57,73 @@ secrets/
 logs/
 
 # ==================================================
-# TEMPORÁRIOS / BACKUPS
+# AMBIENTE E SEGREDOS
+# ==================================================
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+*.pem
+*.key
+*.p12
+*.pfx
+*.keystore
+
+# ==================================================
+# PYTHON
+# ==================================================
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+
+# ==================================================
+# TEMPORÁRIOS
 # ==================================================
 *.tmp
 *.temp
 *.swp
 *.swo
 *.bak
-*.backup
 *.orig
 *~
 
 # ==================================================
-# SISTEMAS OPERACIONAIS
-# ==================================================
-.DS_Store
-.DS_Store?
-._*
-Thumbs.db
-Desktop.ini
-$RECYCLE.BIN/
-
-# ==================================================
-# EDITORES / IDEs
-# ==================================================
-.vscode/
-.idea/
-*.iml
-*.sublime-workspace
-*.sublime-project
-.history/
-
-# ==================================================
-# DOCKER / DESENVOLVIMENTO LOCAL
-# ==================================================
-docker-compose.override.yml
-.compose.override.yaml
-
-# ==================================================
-# BANCOS DE DADOS LOCAIS
+# BANCO DE DADOS LOCAL
 # ==================================================
 *.sqlite
 *.sqlite3
 *.db
 
 # ==================================================
-# ARQUIVOS LOCAIS
+# SISTEMA OPERACIONAL
 # ==================================================
-*.local
+.DS_Store
+Thumbs.db
+Desktop.ini
 
 # ==================================================
-# EXCEÇÕES IMPORTANTES
+# IDEs
 # ==================================================
-!.env.example
-!.env.*.example
+.vscode/
+.idea/
+*.iml
+
+# ==================================================
+# EXCEÇÕES
+# ==================================================
 !package.json
 !package-lock.json
 !npm-shrinkwrap.json
 !pnpm-lock.yaml
 !yarn.lock
+
 !composer.json
 !composer.lock
+
 !Gemfile
 !Gemfile.lock
+
 !pyproject.toml
 !requirements.txt
